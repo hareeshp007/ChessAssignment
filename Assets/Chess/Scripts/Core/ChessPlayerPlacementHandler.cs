@@ -154,18 +154,12 @@ namespace Chess.Scripts.Core {
         private void Pawn()
         {
             int forwardRow = row + 1;
-
-            if (IsWithinBounds(forwardRow, column))
+            if (IsWithinBounds(forwardRow, column) && CheckPositionIsFree(forwardRow, column))
             {
                 ChessBoardPlacementHandler.Instance.Highlight(forwardRow, column);
-            }
-            if (CurrentRow == 1)
-            {
-                int doubleForwardRow = row + 2;
-
-                if (IsWithinBounds(doubleForwardRow, column))
+                if (row == 1 && CheckPositionIsFree(forwardRow + 1, column))
                 {
-                    ChessBoardPlacementHandler.Instance.Highlight(doubleForwardRow, column);
+                    ChessBoardPlacementHandler.Instance.Highlight(forwardRow + 1, column);
                 }
             }
         }
