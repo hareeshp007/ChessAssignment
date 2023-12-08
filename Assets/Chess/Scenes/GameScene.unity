@@ -204,8 +204,8 @@ GameObject:
   m_Component:
   - component: {fileID: 60290582}
   - component: {fileID: 60290583}
-  - component: {fileID: 60290584}
   - component: {fileID: 60290585}
+  - component: {fileID: 60290584}
   m_Layer: 0
   m_Name: Queen
   m_TagString: Queen
@@ -292,8 +292,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7d0d607122f458d97ba7f7c19066613, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  row: 0
+  row: 2
   column: 3
+  CurrentSide: 0
+  CurrentRow: 0
+  CurrentColumn: 0
 --- !u!61 &60290585
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -805,6 +808,7 @@ MonoBehaviour:
   - {fileID: 1457761172}
   - {fileID: 209010543}
   _highlightPrefab: {fileID: 3575455442422821219, guid: 63e242f84ee31dd49b18bb41b8d1c522, type: 3}
+  _highlightEnemyPrefab: {fileID: 4720963847207703359, guid: e0c5058f5c72ad84ab3dbebecc70d6ab, type: 3}
 --- !u!1 &280411635
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,8 +819,8 @@ GameObject:
   m_Component:
   - component: {fileID: 280411636}
   - component: {fileID: 280411637}
-  - component: {fileID: 280411638}
   - component: {fileID: 280411639}
+  - component: {fileID: 280411638}
   m_Layer: 0
   m_Name: Rook
   m_TagString: Rook
@@ -905,6 +909,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 0
   column: 7
+  CurrentSide: 0
+  CurrentRow: 0
+  CurrentColumn: 0
 --- !u!61 &280411639
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1197,8 +1204,8 @@ GameObject:
   m_Component:
   - component: {fileID: 309589164}
   - component: {fileID: 309589165}
-  - component: {fileID: 309589166}
   - component: {fileID: 309589167}
+  - component: {fileID: 309589166}
   m_Layer: 0
   m_Name: Pawn
   m_TagString: Pawn
@@ -1287,6 +1294,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 1
   column: 3
+  CurrentSide: 1
+  CurrentRow: 0
+  CurrentColumn: 0
 --- !u!61 &309589167
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1509,8 +1519,8 @@ GameObject:
   m_Component:
   - component: {fileID: 354243239}
   - component: {fileID: 354243240}
-  - component: {fileID: 354243241}
   - component: {fileID: 354243242}
+  - component: {fileID: 354243241}
   m_Layer: 0
   m_Name: Bishop
   m_TagString: Bishop
@@ -1597,8 +1607,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7d0d607122f458d97ba7f7c19066613, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  row: 0
+  row: 3
   column: 2
+  CurrentSide: 0
+  CurrentRow: 0
+  CurrentColumn: 0
 --- !u!61 &354243242
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1922,8 +1935,8 @@ GameObject:
   m_Component:
   - component: {fileID: 409402678}
   - component: {fileID: 409402680}
-  - component: {fileID: 409402679}
   - component: {fileID: 409402681}
+  - component: {fileID: 409402679}
   m_Layer: 0
   m_Name: Pawn
   m_TagString: Pawn
@@ -1960,6 +1973,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 1
   column: 1
+  CurrentSide: 1
+  CurrentRow: 0
+  CurrentColumn: 0
 --- !u!212 &409402680
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2201,8 +2217,8 @@ GameObject:
   m_Component:
   - component: {fileID: 436799126}
   - component: {fileID: 436799127}
-  - component: {fileID: 436799128}
   - component: {fileID: 436799129}
+  - component: {fileID: 436799128}
   m_Layer: 0
   m_Name: Pawn
   m_TagString: Pawn
@@ -2291,6 +2307,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 1
   column: 0
+  CurrentSide: 1
+  CurrentRow: 0
+  CurrentColumn: 0
 --- !u!61 &436799129
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2346,8 +2365,8 @@ GameObject:
   m_Component:
   - component: {fileID: 451512797}
   - component: {fileID: 451512798}
-  - component: {fileID: 451512799}
   - component: {fileID: 451512800}
+  - component: {fileID: 451512799}
   m_Layer: 0
   m_Name: King
   m_TagString: King
@@ -2436,6 +2455,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 0
   column: 4
+  CurrentSide: 0
+  CurrentRow: 0
+  CurrentColumn: 0
 --- !u!61 &451512800
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2898,8 +2920,8 @@ GameObject:
   m_Component:
   - component: {fileID: 755527375}
   - component: {fileID: 755527376}
-  - component: {fileID: 755527377}
   - component: {fileID: 755527378}
+  - component: {fileID: 755527377}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Knight
@@ -2988,6 +3010,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 0
   column: 6
+  CurrentSide: 0
+  CurrentRow: 0
+  CurrentColumn: 0
 --- !u!61 &755527378
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3177,8 +3202,8 @@ GameObject:
   m_Component:
   - component: {fileID: 969461836}
   - component: {fileID: 969461837}
-  - component: {fileID: 969461838}
   - component: {fileID: 969461839}
+  - component: {fileID: 969461838}
   m_Layer: 0
   m_Name: Pawn
   m_TagString: Pawn
@@ -3267,6 +3292,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 1
   column: 7
+  CurrentSide: 1
+  CurrentRow: 0
+  CurrentColumn: 0
 --- !u!61 &969461839
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3456,8 +3484,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1126575666}
   - component: {fileID: 1126575667}
-  - component: {fileID: 1126575668}
   - component: {fileID: 1126575669}
+  - component: {fileID: 1126575668}
   m_Layer: 0
   m_Name: Pawn
   m_TagString: Pawn
@@ -3546,6 +3574,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 1
   column: 4
+  CurrentSide: 1
+  CurrentRow: 0
+  CurrentColumn: 0
 --- !u!61 &1126575669
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3806,8 +3837,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1285433204}
   - component: {fileID: 1285433205}
-  - component: {fileID: 1285433206}
   - component: {fileID: 1285433207}
+  - component: {fileID: 1285433206}
   m_Layer: 0
   m_Name: Bishop
   m_TagString: Bishop
@@ -3894,8 +3925,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7d0d607122f458d97ba7f7c19066613, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  row: 0
+  row: 4
   column: 5
+  CurrentSide: 0
+  CurrentRow: 0
+  CurrentColumn: 0
 --- !u!61 &1285433207
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4085,8 +4119,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1342563077}
   - component: {fileID: 1342563078}
-  - component: {fileID: 1342563079}
   - component: {fileID: 1342563080}
+  - component: {fileID: 1342563079}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Knight
@@ -4173,8 +4207,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7d0d607122f458d97ba7f7c19066613, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  row: 0
+  row: 4
   column: 1
+  CurrentSide: 0
+  CurrentRow: 0
+  CurrentColumn: 0
 --- !u!61 &1342563080
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4499,8 +4536,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1486999843}
   - component: {fileID: 1486999844}
-  - component: {fileID: 1486999845}
   - component: {fileID: 1486999846}
+  - component: {fileID: 1486999845}
   m_Layer: 0
   m_Name: Pawn
   m_TagString: Pawn
@@ -4589,6 +4626,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 1
   column: 5
+  CurrentSide: 1
+  CurrentRow: 0
+  CurrentColumn: 0
 --- !u!61 &1486999846
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5160,8 +5200,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1707383399}
   - component: {fileID: 1707383400}
-  - component: {fileID: 1707383401}
   - component: {fileID: 1707383402}
+  - component: {fileID: 1707383401}
   m_Layer: 0
   m_Name: Pawn
   m_TagString: Pawn
@@ -5250,6 +5290,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 1
   column: 6
+  CurrentSide: 1
+  CurrentRow: 0
+  CurrentColumn: 0
 --- !u!61 &1707383402
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5305,8 +5348,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1723691866}
   - component: {fileID: 1723691867}
-  - component: {fileID: 1723691868}
   - component: {fileID: 1723691869}
+  - component: {fileID: 1723691868}
   m_Layer: 0
   m_Name: Pawn
   m_TagString: Pawn
@@ -5395,6 +5438,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 1
   column: 2
+  CurrentSide: 1
+  CurrentRow: 0
+  CurrentColumn: 0
 --- !u!61 &1723691869
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5822,8 +5868,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2003609497}
   - component: {fileID: 2003609498}
-  - component: {fileID: 2003609499}
   - component: {fileID: 2003609500}
+  - component: {fileID: 2003609499}
   m_Layer: 0
   m_Name: Rook
   m_TagString: Rook
@@ -5912,6 +5958,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 0
   column: 0
+  CurrentSide: 0
+  CurrentRow: 0
+  CurrentColumn: 0
 --- !u!61 &2003609500
 BoxCollider2D:
   m_ObjectHideFlags: 0

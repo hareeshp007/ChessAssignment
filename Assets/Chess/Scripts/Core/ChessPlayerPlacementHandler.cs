@@ -6,6 +6,7 @@ using UnityEngine.XR;
 namespace Chess.Scripts.Core {
     public class ChessPlayerPlacementHandler : MonoBehaviour {
         [SerializeField] public int row, column;
+        public ChessSide CurrentSide;
         [SerializeField]
         private int CurrentRow,CurrentColumn;
         private int MaxRow=8, MaxColumn=8;
@@ -177,11 +178,27 @@ namespace Chess.Scripts.Core {
                 ChessPlayerPlacementHandler piece = collider.gameObject.GetComponent<ChessPlayerPlacementHandler>();
                 if (piece != null)
                 {
+                    CheckPositionIsEnemy(piece,r,c);
                     return false;
                 }
             }
             return true;
         }
+
+        private void CheckPositionIsEnemy(ChessPlayerPlacementHandler piece,int r,int c)
+        {
+           if( piece.CurrentSide!=this.CurrentSide)
+            {
+                ChessBoardPlacementHandler.Instance.HighlightEnemy(r,c);
+                Debug.Log("Row : " + r + "  Col : " + c + "IsEnemy :" + piece.name +piece.CurrentSide.ToString());
+            }
+              
+        }
+    }
+    public enum ChessSide
+    {
+        White,
+        Black
     }
 }
    
